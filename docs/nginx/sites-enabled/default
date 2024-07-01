@@ -1,0 +1,11 @@
+autoindex off;
+
+error_page 404 /vylboard/public/404.html;
+error_page 403 /vylboard/public/403.html;
+error_page 500 502 503 504 /vylboard/public/50x.html;
+
+location /vylboard/ {
+	# sFirst attempt to serve request as file, then
+	# as directory, then fall back to displaying a 404.
+	try_files $uri /vylboard/public/index.php?/$uri;
+}

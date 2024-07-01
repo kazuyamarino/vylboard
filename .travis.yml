@@ -1,0 +1,19 @@
+language: php
+
+php:
+  - 7.3
+  - 7.4
+  - 8.0
+
+before_script:
+  - mkdir vylma
+  - composer update
+  - composer install --prefer-source --no-interaction
+
+script:
+  - phpunit System/Test/SimpleTest.php
+
+env:
+  - APP_ENV=development
+  - APP_DIR=vylma
+  - DB_CONNECTION=mysql
