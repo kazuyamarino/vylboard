@@ -10,7 +10,7 @@
         <div class="level">
             <div class="level-left">
                 <div class="level-item">
-                    © @( date('Y') ), Dash
+                    © @( date('Y') ), Vylboard
                 </div>
             </div>
             <div class="level-right">

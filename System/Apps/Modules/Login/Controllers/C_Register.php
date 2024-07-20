@@ -162,11 +162,11 @@ class C_Register extends Load
 				$this->Mail->Port = 465; // TCP port to connect to
 
 				//Recipients
-				$this->Mail->setFrom('data.admin@targetprima.com', 'Dash System');
+				$this->Mail->setFrom('data.admin@targetprima.com', 'Vylboard System');
 				$this->Mail->addAddress($get_user_email, $get_name); // Add a recipient
 
 				$this->Mail->isHTML(true); // Set email format to HTML
-				$this->Mail->Subject = "Dash - Reset ID Number";
+				$this->Mail->Subject = "Vylboard - Reset ID Number";
 
 				$mailContent = "Your Reset ID Number " . $reset_id;
 

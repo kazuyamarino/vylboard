@@ -100,7 +100,7 @@
 	<aside class="aside is-placed-left is-expanded">
 		<div class="aside-tools">
 			<div class="aside-tools-label">
-				<span><b>Dash</b> Admin</span>
+				<span><b>Dashboard</b> Admin</span>
 			</div>
 		</div>
 		<div class="menu is-menu-main">
